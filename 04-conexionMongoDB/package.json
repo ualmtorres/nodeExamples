@@ -1,9 +1,0 @@
-{
-	"name": "EjemploMongoDB",
-	"version": "0.1.1",
-	"author": "Manuel Torres <mtorres@ual.es>",
-	"dependencies": {
-		"mongodb": "2.1.11"
-	}
-}
-
