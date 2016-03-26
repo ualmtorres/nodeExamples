@@ -1,0 +1,9 @@
+{
+	"name": "Ejemplo Express",
+	"version": "0.1",
+	"author": "Manuel Torres <mtorres@ual.es>",
+	"dependencies": {
+		"express": "4.13.14"
+	}
+}
+
