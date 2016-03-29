@@ -21,7 +21,7 @@ User.findOne({email: 'johnsmith@mongoose.com'}, function(err, doc) {
 	console.log('User modified');
 })
 
-
+//User modified using the static method update() of the model
 User.update({email: 'marythompson@mongoose.com'}, {$set: {age: 31}}, function(err, docs) {
 	if (err) {
 		console.log(err);
