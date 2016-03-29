@@ -1,0 +1,9 @@
+{
+	"name": "ejemplo-mongoose",
+	"version": "0.1.0",
+	"author": "Manuel Torres <mtorres@ual.es>",
+	"dependencies": {
+		"mongoose": "4.4.10"
+	}
+}
+
