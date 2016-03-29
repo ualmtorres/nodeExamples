@@ -1,7 +1,6 @@
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
 
-var employeeSchema = new Schema({
+var userSchema = new mongoose.Schema({
 	name: {
 		type: String,
 		required: true
@@ -11,13 +10,14 @@ var employeeSchema = new Schema({
 		required: true,
 		lowercase: true
 	},
-	createdOn: {
-		type: Date,
-		default: Date.now
+	age: {
+		type: Number,
+		default: 18
 	}
 });
 
-mongoose.model('Employee', employeeSchema);
+// Build the User model
+mongoose.model('User', userSchema);
 
 
 
