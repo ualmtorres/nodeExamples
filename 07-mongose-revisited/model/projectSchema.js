@@ -1,4 +1,6 @@
 var mongoose = require('mongoose');
+
+// User model is included because it is referenced
 var User = mongoose.model('User');
 
 var projectSchema = new mongoose.Schema({
@@ -12,7 +14,11 @@ var projectSchema = new mongoose.Schema({
 	createdBy: {
 		type: mongoose.Schema.Types.ObjectId,
 		ref:'User'
-	}
+	},
+	contributors: [{
+		type: mongoose.Schema.Types.ObjectId,
+		ref:'User'
+	}]
 });
 
 // Build the Project model

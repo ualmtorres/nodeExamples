@@ -6,6 +6,7 @@ var Project = mongoose.model('Project');
 
 Project.findOne({name:'Project 1'})
 	.populate('createdBy')
+	.populate('contributors', 'name email -_id')
 	.exec(function(err, result) {	
 	if (err) {
 		console.log(err);
